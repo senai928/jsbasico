@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Valores</h1>
+    <p>Cuidado com Valores na Adição</p>
+
+    <script>
+       window.alert('Vamos Calcular!')
+        window.confirm('Esta Gostando do JS.???')
+
+//       var n1 = window.prompt('Digite Valor 1') //Isso esta como string e precisa ser convertido para numero
+//        var n2 = window.prompt('Digite Valor 2')//Isso esta como string e precisa ser convertido para numero
+
+        // numero inteiro
+       // var n1 = number.parseInt(window.prompt('Digite Valor 1'))
+       // var n2 = number.parseInt(window.prompt('Digite Valor 2'))
+
+       //numero com ponto 5.5
+//        var n1 = number.parseFloat(window.prompt('Digite Valor 1'))
+ //       var n2 = number.parseFloat(window.prompt('Digite Valor 2'))
+
+        //Nessa situação o js se vira sozinho para saber qual e variavel
+        var n1 = Number(window.prompt('Digite Valor 1'))
+        var n2 = Number(window.prompt('Digite Valor 2'))
+
+
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s) //Aqui esta concatenando
+        window.alert('A soma dos valores é ' + String(s)) //Estamos convertendo Numero para String
+        window.alert(`A soma entre ${n1} e ${n2} é igual a =  ${s}`)
+        //(Number + number) para adição
+        //(string + string) para concatenação
+</script>
+</body>
+</html>
